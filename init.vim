@@ -16,6 +16,7 @@ tnoremap <Esc> <C-\><C-n>
 set splitbelow splitright
 let mapleader=" "
 set guicursor=""
+set updatetime=300
 
 call plug#begin()
 
@@ -32,7 +33,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'uiiaoo/java-syntax.vim'
 Plug 'lingnand/pandoc-preview.vim'
-Plug 'mattn/emmet-vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -51,10 +52,12 @@ nnoremap <leader>v <Esc>:PandocPreview<cr>
 
 colorscheme gruvbox
 
+
 let NERDTreeShowHidden=1
 inoremap " ""<Esc>ha
 inoremap ' ''<Esc>ha
 inoremap ` ``<Esc>ha
+nnoremap oo o<Esc>k
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
@@ -71,3 +74,9 @@ noremap <silent> <C-Down> :resize -3<cr>
 let g:airline_theme='gruvbox'
 highlight link javaIdentifier NONE
 highlight link javaDelimiter NONE
+
+" Make <CR> auto-select the first completion item and notify coc.nvim to
+" format on enter, <cr> could be remapped by other vim plugin
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
