@@ -33,7 +33,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'uiiaoo/java-syntax.vim'
 Plug 'lingnand/pandoc-preview.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch' : 'release'}
 
 call plug#end()
 
@@ -52,12 +52,13 @@ nnoremap <leader>v <Esc>:PandocPreview<cr>
 
 colorscheme gruvbox
 
-
 let NERDTreeShowHidden=1
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
 inoremap " ""<Esc>ha
 inoremap ' ''<Esc>ha
 inoremap ` ``<Esc>ha
-nnoremap oo o<Esc>k
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
