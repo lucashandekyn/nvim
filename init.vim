@@ -30,6 +30,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'uiiaoo/java-syntax.vim'
 Plug 'lingnand/pandoc-preview.vim'
+Plug 'ashisha/image.vim'
 
 call plug#end()
 
