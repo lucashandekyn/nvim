@@ -9,6 +9,8 @@ set shiftwidth=4
 set smarttab
 set softtabstop=4
 set mouse=a
+map <ScrollWheelUp> <C-Y>
+map <ScrollWheelDown> <C-E>
 set guifont=MesloGs\Nf\ 12
 tnoremap <Esc> <C-\><C-n>
 set splitbelow splitright
