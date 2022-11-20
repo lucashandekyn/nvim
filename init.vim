@@ -32,10 +32,18 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'uiiaoo/java-syntax.vim'
 Plug 'lingnand/pandoc-preview.vim'
-Plug 'ashisha/image.vim'
 Plug 'mattn/emmet-vim'
 
 call plug#end()
+
+
+" only enable Emmet for certain file types
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
+" redefine the trigger key (you still need to enter the trailing ,)
+let g:user_emmet_leader_key='<C-Z>'
+
 
 inoremap <C-a> <Esc>:ZenMode<cr>
 nnoremap <C-a> <Esc>:ZenMode<cr>
