@@ -32,6 +32,7 @@ Plug 'uiiaoo/java-syntax.vim'
 Plug 'lingnand/pandoc-preview.vim'
 Plug 'neoclide/coc.nvim', {'branch' : 'release'}
 Plug 'nvim-lua/plenary.nvim'
+Plug 'conornewton/vim-latex-preview'
 
 call plug#end()
 
@@ -75,3 +76,7 @@ let g:airline_theme='gruvbox'
 
 highlight link javaIdentifier NONE
 highlight link javaDelimiter NONE
+
+
+let g:latex_preview_clean = 1
+let g:latex_pdf_viewer="evince"
