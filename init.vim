@@ -80,3 +80,4 @@ highlight link javaDelimiter NONE
 
 let g:latex_preview_clean = 1
 let g:latex_pdf_viewer="evince"
+let g:latex_engine="basictex""
