@@ -37,7 +37,7 @@ call plug#end()
 
 inoremap <C-a> <Esc>:ZenMode<cr>
 nnoremap <C-a> <Esc>:ZenMode<cr>
-nnoremap <C>v <Esc>:PandocPreview<cr>
+nnoremap <C-p>v <Esc>:PandocPreview<cr>
 
 colorscheme gruvbox
 
