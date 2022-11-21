@@ -58,6 +58,11 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" for the foldable bluetooth keboard
+inoremap <C-q> <Esc>
+nnoremap <C-q> <C-w>q
+tnoremap <C-q> <C-\><C-n>
+
 " telescope key mappings
 nnoremap <C-f>g <cmd>Telescope live_grep<cr>
 nnoremap <C-f>f  <cmd>Telescope find_files<cr>
