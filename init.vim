@@ -25,6 +25,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'luochen1990/rainbow'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'ryanoasis/vim-devicons'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'uiiaoo/java-syntax.vim'
@@ -40,6 +43,10 @@ nnoremap <C-a> <Esc>:ZenMode<cr>
 nnoremap <C-p>v <Esc>:PandocPreview<cr>
 
 colorscheme gruvbox
+
+" ariline themes
+let g:airline_theme='gruvbox'
+let g:airline#extensions#branch#enabled=1
 
 " Nerdtree settings
 let NERDTreeShowHidden=1
