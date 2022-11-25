@@ -30,6 +30,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-lua/plenary.nvim'
 Plug 'uiiaoo/java-syntax.vim'
 Plug 'lingnand/pandoc-preview.vim'
 Plug 'neoclide/coc.nvim', {'branch' : 'release'}
