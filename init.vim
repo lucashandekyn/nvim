@@ -44,9 +44,10 @@ nnoremap <C-p>v <Esc>:PandocPreview<cr>
 
 colorscheme gruvbox
 
-" ariline themes
+" ariline
 let g:airline_theme='gruvbox'
-let g:airline#extensions#branch#enabled=1
+let g:airline#extensions#hunks#enabled=1
+let g:airline_powerline_fonts=1
 
 " Nerdtree settings
 let NERDTreeShowHidden=1
