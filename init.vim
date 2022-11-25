@@ -33,8 +33,6 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'uiiaoo/java-syntax.vim'
 Plug 'lingnand/pandoc-preview.vim'
 Plug 'neoclide/coc.nvim', {'branch' : 'release'}
-Plug 'nvim-lua/plenary.nvim'
-Plug 'conornewton/vim-latex-preview'
 
 call plug#end()
 
