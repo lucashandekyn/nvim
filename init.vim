@@ -26,8 +26,7 @@ Plug 'luochen1990/rainbow'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'uiiaoo/java-syntax.vim'
 Plug 'lingnand/pandoc-preview.vim'
 Plug 'neoclide/coc.nvim', {'branch' : 'release'}
@@ -77,7 +76,6 @@ noremap <silent> <C-Right> :vertical resize -3<cr>
 noremap <silent> <C-Up> :resize +3<cr>
 noremap <silent> <C-Down> :resize -3<cr>
 
-let g:airline_theme='gruvbox'
 
 highlight link javaIdentifier NONE
 highlight link javaDelimiter NONE
