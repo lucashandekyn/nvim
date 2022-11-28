@@ -6,6 +6,7 @@ set autoindent
 set expandtab
 set tabstop=4
 set shiftwidth=4
+set softtabstop=4
 set smarttab
 set mouse=a
 map <ScrollWheelUp> <C-Y>
@@ -40,7 +41,7 @@ inoremap <C-a> <Esc>:ZenMode<cr>
 nnoremap <C-a> <Esc>:ZenMode<cr>
 nnoremap <C-p>v <Esc>:PandocPreview<cr>
 
-colorscheme gruvbox
+colorscheme molokai
 
 " ariline
 let g:airline_theme='gruvbox'
