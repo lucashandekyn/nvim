@@ -41,7 +41,7 @@ inoremap <C-a> <Esc>:ZenMode<cr>
 nnoremap <C-a> <Esc>:ZenMode<cr>
 nnoremap <C-p>v <Esc>:PandocPreview<cr>
 
-colorscheme molokai
+colorscheme gruvbox
 
 " ariline
 let g:airline_theme='gruvbox'
@@ -63,6 +63,7 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+nnoremap <space> i<space><esc>
 
 " for the foldable bluetooth keboard
 inoremap <C-q> <Esc>
