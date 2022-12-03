@@ -89,3 +89,6 @@ noremap <silent> <C-Down> :resize -3<cr>
 
 highlight link javaIdentifier NONE
 highlight link javaDelimiter NONE
+
+au ColorScheme * hi Normal ctermbg=none guibg=none
+au ColorScheme myspecialcolors hi Normal ctermbg=red guibg=red
