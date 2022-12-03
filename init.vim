@@ -64,6 +64,8 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 nnoremap <space> i<space><esc>
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
 
 " for the foldable bluetooth keboard
 inoremap <C-q> <Esc>
