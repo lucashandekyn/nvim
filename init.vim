@@ -34,6 +34,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'uiiaoo/java-syntax.vim'
 Plug 'lingnand/pandoc-preview.vim'
 Plug 'neoclide/coc.nvim', {'branch' : 'release'}
+Plug 'ThePrimeagen/vim-be-good'
 
 call plug#end()
 
